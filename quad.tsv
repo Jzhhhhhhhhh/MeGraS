@@ -1,0 +1,8 @@
+subject	predicate	object
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#rawMimeType>	image/jpeg^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#fileName>	zebra.jpeg^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#mediaType>	IMAGE^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#rawId>	EL58FAQM086OK4VH0PD2QT4QB108G08H0NU7IKHU8IU1JHCUGSS0^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#bounds>	0.0,283.0,0.0,178.0,-,-,-,-^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#canonicalMimeType>	image/png^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#canonicalId>	Q2BL2SIC0JQV7CP0RQR3MCG5UU5U4996PBOU42V8CGOILMN7GTFG^^String

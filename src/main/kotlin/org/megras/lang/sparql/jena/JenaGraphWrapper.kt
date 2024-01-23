@@ -6,11 +6,14 @@ import org.apache.jena.graph.impl.GraphBase
 import org.apache.jena.util.iterator.ExtendedIterator
 import org.megras.data.graph.QuadValue
 import org.megras.data.graph.URIValue
+import org.megras.data.schema.MeGraS
 import org.megras.graphstore.QuadSet
 import org.megras.lang.sparql.SparqlUtil
 import org.megras.lang.sparql.SparqlUtil.toQuadValue
+import org.megras.query.relation.BelowFunction
+import org.megras.query.relation.aboveFunction
 
-class JenaGraphWrapper(private val quads: QuadSet) : GraphBase() {
+class JenaGraphWrapper(private var quads: QuadSet) : GraphBase() {
 
 
     override fun graphBaseFind(triplePattern: Triple): ExtendedIterator<Triple> {
@@ -18,6 +21,15 @@ class JenaGraphWrapper(private val quads: QuadSet) : GraphBase() {
         val s = toQuadValue(triplePattern.subject)
         val p = toQuadValue(triplePattern.predicate)
         val o = toQuadValue(triplePattern.`object`)
+        when(p){
+            QuadValue.of(MeGraS.ABOVE.uri)-> this.quads = o?.let { aboveFunction(it, quads) }!!
+            QuadValue.of(MeGraS.BELOW.uri)->BelowFunction(quads)
+            else-> println("wrong")
+        }
+//        quads.forEach{n->
+//            println(n.subject)
+//        }
+
 
         val quadset = this.quads.filter(
             if (s != null) {

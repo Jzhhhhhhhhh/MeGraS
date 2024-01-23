@@ -4,10 +4,8 @@ import org.megras.api.cli.Cli
 import org.megras.api.rest.RestApi
 import org.megras.data.fs.FileSystemObjectStore
 import org.megras.data.model.Config
-import org.megras.graphstore.db.CottontailStore
-import org.megras.graphstore.HybridMutableQuadSet
 import org.megras.graphstore.TSVMutableQuadSet
-import org.megras.graphstore.db.PostgresStore
+import org.megras.lang.sparql.SparqlUtil
 import java.io.File
 
 object MeGraS {
@@ -23,21 +21,29 @@ object MeGraS {
 
         val objectStore = FileSystemObjectStore(config.objectStoreBase)
 
-        val postgresStore = PostgresStore()
-        val cottontailStore = CottontailStore()
+//        val postgresStore = PostgresStore()
+//        val cottontailStore = CottontailStore()
 
-        val quadSet = HybridMutableQuadSet(postgresStore, cottontailStore)
+//        val quadSet = HybridMutableQuadSet(postgresStore, cottontailStore)
 
-        postgresStore.setup()
-        cottontailStore.setup()
+        val quadSet = TSVMutableQuadSet("test.tsv")
 
-        RestApi.init(config, objectStore, quadSet)
 
-        Cli.init(quadSet, objectStore)
+        val query = "SELECT ?s " +
+                    "WHERE { ?s <http://megras.org/schema#above> <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg> .}"
 
-        Cli.loop()
+//        postgresStore.setup()
+//        cottontailStore.setup()
+        val result = SparqlUtil.select(query, quadSet)
+        println(result)
 
-        RestApi.stop()
+//        RestApi.init(config, objectStore, quadSet)
+//
+//        Cli.init(quadSet, objectStore)
+//
+//        Cli.loop()
+//
+//        RestApi.stop()
 
 
     }
