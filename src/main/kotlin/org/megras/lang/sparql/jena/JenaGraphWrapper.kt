@@ -21,17 +21,11 @@ class JenaGraphWrapper(private var quads: QuadSet) : GraphBase() {
         val s = toQuadValue(triplePattern.subject)
         val p = toQuadValue(triplePattern.predicate)
         val o = toQuadValue(triplePattern.`object`)
+        var quadset = quads
         when(p){
-            QuadValue.of(MeGraS.ABOVE.uri)-> this.quads = o?.let { aboveFunction(it, quads) }!!
+            QuadValue.of(MeGraS.ABOVE.uri)-> quadset = o?.let { aboveFunction(it, quads) }!!
             QuadValue.of(MeGraS.BELOW.uri)->BelowFunction(quads)
-            else-> println("wrong")
-        }
-//        quads.forEach{n->
-//            println(n.subject)
-//        }
-
-
-        val quadset = this.quads.filter(
+            else-> quadset = this.quads.filter(
             if (s != null) {
                 listOf(s)
             } else null,
@@ -42,6 +36,9 @@ class JenaGraphWrapper(private var quads: QuadSet) : GraphBase() {
                 listOf(o)
             } else null,
         )
+        }
+
+
 
         return QuadSetIterator(quadset)
 
