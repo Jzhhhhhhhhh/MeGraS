@@ -10,8 +10,8 @@ import org.megras.data.schema.MeGraS
 import org.megras.graphstore.QuadSet
 import org.megras.lang.sparql.SparqlUtil
 import org.megras.lang.sparql.SparqlUtil.toQuadValue
-import org.megras.query.relation.BelowFunction
 import org.megras.query.relation.aboveFunction
+import org.megras.query.relation.belowFunction
 
 class JenaGraphWrapper(private var quads: QuadSet) : GraphBase() {
 
@@ -22,19 +22,21 @@ class JenaGraphWrapper(private var quads: QuadSet) : GraphBase() {
         val p = toQuadValue(triplePattern.predicate)
         val o = toQuadValue(triplePattern.`object`)
         var quadset = quads
+        //relations when give s and o
+
         when(p){
             QuadValue.of(MeGraS.ABOVE.uri)-> quadset = o?.let { aboveFunction(it, quads) }!!
-            QuadValue.of(MeGraS.BELOW.uri)->BelowFunction(quads)
+            QuadValue.of(MeGraS.BELOW.uri)-> quadset = o?.let { belowFunction(it, quads) }!!
             else-> quadset = this.quads.filter(
-            if (s != null) {
-                listOf(s)
-            } else null,
-            if (p != null) {
-                listOf(p)
-            } else null,
-            if (o != null) {
-                listOf(o)
-            } else null,
+                if (s != null) {
+                    listOf(s)
+                } else null,
+                if (p != null) {
+                    listOf(p)
+                } else null,
+                if (o != null) {
+                    listOf(o)
+                } else null,
         )
         }
 

@@ -30,7 +30,7 @@ object MeGraS {
 
 
         val query = "SELECT ?s " +
-                    "WHERE { ?s <http://megras.org/schema#above> <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg> .}"
+                    "WHERE { ?s <http://megras.org/schema#below> <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ> .}"
 
 //        postgresStore.setup()
 //        cottontailStore.setup()

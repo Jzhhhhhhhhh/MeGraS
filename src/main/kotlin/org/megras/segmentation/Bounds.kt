@@ -13,7 +13,7 @@ class Bounds {
 
     constructor(boundString: String) {
         bounds = boundString.split(",").map {
-            if (it == "-") {
+            if ("-" in it) {
                 Double.NaN
             } else {
                 it.toDouble()
