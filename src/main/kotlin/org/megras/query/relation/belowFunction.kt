@@ -3,13 +3,13 @@ package org.megras.query.relation
 import org.megras.data.graph.QuadValue
 import org.megras.data.schema.MeGraS
 import org.megras.graphstore.QuadSet
+import org.megras.query.QueryUtil
 import org.megras.segmentation.Bounds
 
 fun belowFunction(o: QuadValue, quads: QuadSet):QuadSet {
-    val originMedia = quads.filter(listOf(o), listOf(QuadValue.of(MeGraS.SEGMENT_OF.uri)) ,null).firstOrNull()?.`object`
-    val segmentSet = quads.filter(null, listOf(QuadValue.of(MeGraS.SEGMENT_OF.uri)), listOf(originMedia!!))
-    val boundsSet = quads.filter(segmentSet.map { it.subject }, listOf(QuadValue.of(MeGraS.SEGMENT_BOUNDS.uri)), null)
-    val originBounds = quads.filter(listOf(o), listOf(QuadValue.of(MeGraS.SEGMENT_BOUNDS.uri)), null)
+    val result: QueryUtil.BoundsResult = QueryUtil.getBounds(o, quads)
+    val originBounds = result.originBounds
+    val boundsSet = result.boundsSet
     val resultBounds : MutableList<QuadValue> = mutableListOf()
     val originMinY = Bounds(originBounds.firstOrNull()?.`object`.toString()).getMinY()
     boundsSet.forEach{

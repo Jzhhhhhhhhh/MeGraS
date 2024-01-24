@@ -1,22 +1,20 @@
 package org.megras.query.relation
 
-import org.megras.data.schema.MeGraS
 import org.megras.data.graph.QuadValue
+import org.megras.data.schema.MeGraS
 import org.megras.graphstore.QuadSet
 import org.megras.query.QueryUtil
-import org.megras.query.QueryUtil.BoundsResult
 import org.megras.segmentation.Bounds
 
-
-fun aboveFunction(o: QuadValue, quads: QuadSet):QuadSet {
-    val result: BoundsResult = QueryUtil.getBounds(o, quads)
+fun containsFunction (o: QuadValue, quads: QuadSet): QuadSet {
+    val result: QueryUtil.BoundsResult = QueryUtil.getBounds(o, quads)
     val originBounds = result.originBounds
     val boundsSet = result.boundsSet
     val resultBounds : MutableList<QuadValue> = mutableListOf()
-    val originMaxY = Bounds(originBounds.firstOrNull()?.`object`.toString()).getMaxY()
+    val originBound = Bounds(originBounds.firstOrNull()?.`object`.toString())
     boundsSet.forEach{
-        val thisMinY = Bounds(it.`object`.toString()).getMinY()
-        if (thisMinY > originMaxY){
+        val thisBound = Bounds(it.`object`.toString())
+        if (thisBound.contains(originBound)){
             resultBounds.add(it.`object`)
         }
     }
