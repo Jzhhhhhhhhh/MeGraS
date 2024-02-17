@@ -8,8 +8,8 @@ import org.megras.query.QueryUtil.BoundsResult
 import org.megras.segmentation.Bounds
 
 
-fun aboveFunction(o: QuadValue, quads: QuadSet):QuadSet {
-    val result: BoundsResult = QueryUtil.getBounds(o, quads)
+fun aboveFunction(s: QuadValue?, o: QuadValue?, quads: QuadSet):QuadSet {
+    val result: BoundsResult = QueryUtil.getBounds(o!!, quads)
     val originBounds = result.originBounds
     val boundsSet = result.boundsSet
     val resultBounds : MutableList<QuadValue> = mutableListOf()

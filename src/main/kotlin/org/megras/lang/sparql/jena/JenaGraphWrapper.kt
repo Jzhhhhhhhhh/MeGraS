@@ -19,25 +19,40 @@ class JenaGraphWrapper(private var quads: QuadSet) : GraphBase() {
         val o = toQuadValue(triplePattern.`object`)
         val quadset: QuadSet
         //relations when give s and o
+        //determine if s. o
 
+        //{s, above, o}
+        //      {null, above, null} figure out all element, get all o and all s, compare, group them by the origin media
+        // {null, above, o} return every segment above o
+        // {s, above, null} return every segment below o, equal to {null, below, o}
+        // {null, below, o}
+        // {null, null, null}
+        // think about vector operations
+        // 19th, Feb meeting
         when(p){
-            QuadValue.of(MeGraS.ABOVE.uri)-> quadset = o?.let { aboveFunction(it, quads) }!!
-            QuadValue.of(MeGraS.BELOW.uri)-> quadset = o?.let { belowFunction(it, quads) }!!
-            QuadValue.of(MeGraS.CONTAINS.uri)->quadset = o?.let { containsFunction(it, quads) }!!
-            QuadValue.of(MeGraS.BELONGS_TO.uri)->quadset = o?.let { belongsToFunction(it, quads) }!!
-            QuadValue.of(MeGraS.DURING.uri)->quadset = o?.let { duringFunction(it, quads) }!!
-            QuadValue.of(MeGraS.LEFT_ABOVE.uri)->quadset = o?.let { leftAboveFunction(it, quads) }!!
-            QuadValue.of(MeGraS.LEFT_BELOW.uri)->quadset = o?.let { leftBelowFunction(it, quads) }!!
-            QuadValue.of(MeGraS.LEFT_BESIDE.uri)->quadset = o?.let { leftBesideFunction(it, quads) }!!
-            QuadValue.of(MeGraS.OVERLAPPED_BY.uri)->quadset = o?.let { overlapedByFunction(it, quads) }!!
-            QuadValue.of(MeGraS.OVERLAPS.uri)->quadset = o?.let { overlapsFunction(it, quads) }!!
-            QuadValue.of(MeGraS.RELATION.uri)->quadset = o?.let { relationFunction(it, quads) }!!
-            QuadValue.of(MeGraS.RIGHT_ABOVE.uri)->quadset = o?.let { rightAboveFunction(it, quads) }!!
-            QuadValue.of(MeGraS.RIGHT_BELOW.uri)->quadset = o?.let { rightBelowFunction(it, quads) }!!
-            QuadValue.of(MeGraS.RIGHT_BESIDE.uri)->quadset = o?.let { rightBesideFunction(it, quads) }!!
-            QuadValue.of(MeGraS.SIZE_EQUAL.uri)->quadset = o?.let { sizeEqualFunction(it, quads) }!!
-            QuadValue.of(MeGraS.SIZE_LARGER.uri)->quadset = o?.let { sizeLargerFunction(it, quads) }!!
-            QuadValue.of(MeGraS.SIZE_SMALLER.uri)->quadset = o?.let { sizeSmallerFunction(it, quads) }!!
+            QuadValue.of(MeGraS.ABOVE.uri) ->
+                if (o != null && s == null) quadset = aboveFunction(s, o, quads)
+                else if (o == null && s != null) quadset = aboveFunction(s, o, quads)
+                else quadset = quads
+//            QuadValue.of(MeGraS.ABOVE.uri)-> quadset = o?.let { aboveFunction(it, quads) } ?: quads
+
+
+            QuadValue.of(MeGraS.BELOW.uri)-> quadset = o?.let { belowFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.CONTAINS.uri)->quadset = o?.let { containsFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.BELONGS_TO.uri)->quadset = o?.let { belongsToFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.DURING.uri)->quadset = o?.let { duringFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.LEFT_ABOVE.uri)->quadset = o?.let { leftAboveFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.LEFT_BELOW.uri)->quadset = o?.let { leftBelowFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.LEFT_BESIDE.uri)->quadset = o?.let { leftBesideFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.OVERLAPPED_BY.uri)->quadset = o?.let { overlapedByFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.OVERLAPS.uri)->quadset = o?.let { overlapsFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.RIGHT_ABOVE.uri)->quadset = o?.let { rightAboveFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.RIGHT_BELOW.uri)->quadset = o?.let { rightBelowFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.RIGHT_BESIDE.uri)->quadset = o?.let { rightBesideFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.SIZE_EQUAL.uri)->quadset = o?.let { sizeEqualFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.SIZE_LARGER.uri)->quadset = o?.let { sizeLargerFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.SIZE_SMALLER.uri)->quadset = o?.let { sizeSmallerFunction(it, quads) } ?: quads
+            QuadValue.of(MeGraS.RELATION.uri)->quadset = s?.takeIf { o != null }?.let { relationFunction(it, o!!, quads) } ?: quads
             else-> quadset = this.quads.filter(
                 if (s != null) {
                     listOf(s)
