@@ -35,7 +35,7 @@ class KnnQueryHandler(private val quads: QuadSet) : PostRequestHandler {
             throw RestErrorStatus(400, "invalid query")
         }
 
-        val predicate = QuadValue.of(query.predicate)
+        val predicate = QuadValue.of(query.predicate)//define such as average color
         val `object` = QuadValue.of(query.`object`)
         val count = query.count
         if (count < 1) {
