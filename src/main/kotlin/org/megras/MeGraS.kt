@@ -1,9 +1,5 @@
 package org.megras
 
-import org.megras.api.cli.Cli
-import org.megras.api.rest.RestApi
-import org.megras.api.rest.data.Distance
-import org.megras.api.rest.handlers.KnnQueryHandler
 import org.megras.data.fs.FileSystemObjectStore
 import org.megras.data.model.Config
 import org.megras.graphstore.TSVMutableQuadSet
@@ -32,20 +28,26 @@ object MeGraS {
 
 //        postgresStore.setup()
 //        cottontailStore.setup()
-        RestApi.init(config, objectStore, quadSet)
-
-        Cli.init(quadSet, objectStore)
-
-        Cli.loop()
-
-        RestApi.stop()
+//        RestApi.init(config, objectStore, quadSet)
+//
+//        Cli.init(quadSet, objectStore)
+//
+//        Cli.loop()
+//
+//        RestApi.stop()
 
 //        val query = "SELECT ?s " +
-//                    "WHERE { ?s <http://megras.org/schema#below> <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ> .}"
-//
-//
-//        val result = SparqlUtil.select(query, quadSet)
-//        println(result)
+//                    "WHERE { " +
+//                "?s <http://megras.org/schema#color> <http://localhost:8080/6IO0J3UDL6VQ> ." +
+//                "}"
+
+
+        val query = "SELECT ?s " +
+                "WHERE {?s <http://megras.org/schema#segmentOf> <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA> .}"
+
+
+        val result = SparqlUtil.select(query, quadSet)
+        println(result)
 
 
 

@@ -17,6 +17,8 @@ class JenaGraphWrapper(private var quads: QuadSet) : GraphBase() {
         val s = toQuadValue(triplePattern.subject)
         val p = toQuadValue(triplePattern.predicate)
         val o = toQuadValue(triplePattern.`object`)
+        println(o)
+
         val quadset: QuadSet
         //relations when give s and o
         //determine if s. o
@@ -42,7 +44,9 @@ class JenaGraphWrapper(private var quads: QuadSet) : GraphBase() {
             QuadValue.of(MeGraS.SIZE_LARGER.uri)->quadset = o?.let { sizeLargerFunction(it, quads) } ?: quads
             QuadValue.of(MeGraS.SIZE_SMALLER.uri)->quadset = o?.let { sizeSmallerFunction(it, quads) } ?: quads
             QuadValue.of(MeGraS.RELATION.uri)->quadset = s?.takeIf { o != null }?.let { relationFunction(it, o!!, quads) } ?: quads
-            QuadValue.of(MeGraS.COLOR.uri)->quadset = o?.let { knnFunction(it, quads) } ?: quads
+//            QuadValue.of(MeGraS.KNN.uri)->quadset = o?.let { knnFunction(o, p, quads) } ?: quads
+//            QuadValue.of(MeGraS.COLOR.uri)->quadset = o?.let { knnFunction(o, p, quads) } ?: quads
+
             else-> quadset = this.quads.filter(
                 if (s != null) {
                     listOf(s)

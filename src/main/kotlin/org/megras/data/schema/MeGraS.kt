@@ -35,6 +35,7 @@ enum class MeGraS(suffix: String) {
     SIZE_SMALLER("sizeSmaller"),
     RELATION("relation"),
     ERROR("error"),
+    KNN("knn"),
     COLOR("color")
 
     ;

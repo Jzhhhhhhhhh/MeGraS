@@ -21,11 +21,13 @@ object SparqlUtil {
             QueryExecution.create(query, DatasetFactory.wrap(DatasetGraphFactory.wrap(jenaWrapper))).execSelect()
         val rows = mutableListOf<Map<String, QuadValue>>()
         resultSet.forEach { row ->
+
             val map = HashMap<String, QuadValue>()
             row.varNames().forEach { name ->
                 val node = row[name].asNode()
                 map[name] = toQuadValue(node)!!
             }
+            println(map)
             rows.add(map)
         }
         return ResultTable(rows)
@@ -62,6 +64,13 @@ object SparqlUtil {
         is LongValue -> model.createTypedLiteral(value.value)
         is StringValue -> model.createTypedLiteral(value.value)
         is VectorValue -> TODO()
+//            {
+//            println(value.toString().javaClass)
+//            model.createTypedLiteral(value.toString())}
+//        is DoubleVectorValue -> model.createTypedLiteral(value.vector)
+//        is DoubleVectorValue -> model.createTypedLiteral(value.vector.joinToString(separator = ", ", prefix = "[", postfix = "]"))
+//        is LongVectorValue -> model.createTypedLiteral(value.vector.joinToString(separator = ", ", prefix = "[", postfix = "]"))
+
     }.asNode()
 
 }

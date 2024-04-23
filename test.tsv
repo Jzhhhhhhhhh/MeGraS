@@ -1,9 +1,9 @@
 subject	predicate	object
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>	<http://megras.org/schema#segmentDefinition>	61.0,134.0,139.0,199.0^^String
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>	<http://megras.org/schema#segmentDefinition>	"61.0,134.0,139.0,199.0^^String"
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/d9AAEZqRKPpRlPyAh0Ne-w>	<http://megras.org/schema#segmentType>	rect^^String
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>	<http://megras.org/schema#canonicalId>	HP7H0I26GS8JHM435BJ8UGMLNJGARAPKAELQUEQ794VS8MVM3JK0^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>	<http://megras.org/schema#segmentBounds>	22.0,171.0,8.0,84.0,-,-,-,-^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#bounds>	0.0,283.0,0.0,178.0,-,-,-,-^^String
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>	<http://megras.org/schema#segmentBounds>	"22.0,171.0,8.0,84.0,-,-,-,-^^String"
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#bounds>	"0.0,283.0,0.0,178.0,-,-,-,-^^String"
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>	<http://megras.org/schema#segmentOf>	<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>	<http://megras.org/schema#canonicalId>	UAA6I40N6VGTJ2N0TULB0MUBBNMHGC6EKOJ39G5QAERBJOKSCHSG^^String
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>	<http://megras.org/schema#fileName>	temp.jpeg^^String
@@ -11,33 +11,33 @@ subject	predicate	object
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#mediaType>	IMAGE^^String
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/d9AAEZqRKPpRlPyAh0Ne-w>	<http://megras.org/schema#segmentOf>	<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/OpL56Z16t_niQC2u0KnG6g>	<http://megras.org/schema#segmentType>	rect^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA/segment/rect/18.0,63.0,13.0,69.0>	<http://schema.org/sameAs>	<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/lp0qW7sg2k3dtNS_eMyN7Q>
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/segment/rect/88.0,230.0,82.0,162.0>	<http://schema.org/sameAs>	<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>	<http://megras.org/schema#segmentDefinition>	63.0,221.0,70.0,176.0^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>	<http://megras.org/schema#segmentBounds>	174.0,270.0,17.0,78.0,-,-,-,-^^String
+"<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA/segment/rect/18.0,63.0,13.0,69.0>"	<http://schema.org/sameAs>	<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/lp0qW7sg2k3dtNS_eMyN7Q>
+"<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/segment/rect/88.0,230.0,82.0,162.0>"	<http://schema.org/sameAs>	<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>	<http://megras.org/schema#segmentDefinition>	"63.0,221.0,70.0,176.0^^String"
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>	<http://megras.org/schema#segmentBounds>	"174.0,270.0,17.0,78.0,-,-,-,-^^String"
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#previewId>	8MU6K308K74SVV5DHRM9UI7K4RII73RBQDBKGASVQUB42TIOGM50^^String
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/d9AAEZqRKPpRlPyAh0Ne-w>	<http://megras.org/schema#previewId>	LR2FUPSE374DL7V0SSGBVGTN82FP2S8NBH6ULVSO12TPH8N37QOG^^String
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>	<http://megras.org/schema#canonicalId>	OI35BREDLQ3Q173JU15ECHU71SA9QCS7M5AUB8VPRL6P9IE7PK3G^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>	<http://megras.org/schema#bounds>	0.0,96.0,0.0,61.0,-,-,-,-^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>	<http://megras.org/schema#bounds>	"0.0,96.0,0.0,61.0,-,-,-,-^^String"
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>	<http://megras.org/schema#rawId>	NVHQ1SSL3MUU4E4TTJ67D89SLRC8UNPK0BHJ5T3AFBRG0T3MED8G^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/d9AAEZqRKPpRlPyAh0Ne-w>	<http://megras.org/schema#bounds>	0.0,58.0,0.0,79.0,-,-,-,-^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/d9AAEZqRKPpRlPyAh0Ne-w>	<http://megras.org/schema#bounds>	"0.0,58.0,0.0,79.0,-,-,-,-^^String"
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>	<http://megras.org/schema#segmentOf>	<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/lp0qW7sg2k3dtNS_eMyN7Q>	<http://megras.org/schema#canonicalId>	OO7VHDTO5S4UEO41DH3P1LV0R6P3N2NTR86RABC3ED4UH9EMH910^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>	<http://megras.org/schema#bounds>	0.0,158.0,0.0,106.0,-,-,-,-^^String
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>	<http://megras.org/schema#bounds>	"0.0,158.0,0.0,106.0,-,-,-,-^^String"
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>	<http://megras.org/schema#segmentType>	rect^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>	<http://megras.org/schema#bounds>	0.0,142.0,0.0,80.0,-,-,-,-^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/segment/rect/61.0,134.0,139.0,199.0>	<http://schema.org/sameAs>	<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>	<http://megras.org/schema#segmentDefinition>	174.0,270.0,17.0,78.0^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>	<http://megras.org/schema#bounds>	"0.0,142.0,0.0,80.0,-,-,-,-^^String"
+"<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/segment/rect/61.0,134.0,139.0,199.0>"	<http://schema.org/sameAs>	<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>	<http://megras.org/schema#segmentDefinition>	"174.0,270.0,17.0,78.0^^String"
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>	<http://megras.org/schema#canonicalId>	N4NBH0EO4K1OTAHM1KOM24RD875VERN8BHV7DMJP848V3622M5B0^^String
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>	<http://megras.org/schema#segmentType>	rect^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>	<http://megras.org/schema#segmentBounds>	61.0,134.0,139.0,199.0,-,-,-,-^^String
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>	<http://megras.org/schema#segmentBounds>	"61.0,134.0,139.0,199.0,-,-,-,-^^String"
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>	<http://megras.org/schema#segmentOf>	<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>	<http://megras.org/schema#bounds>	0.0,149.0,0.0,76.0,-,-,-,-^^String
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>	<http://megras.org/schema#bounds>	"0.0,149.0,0.0,76.0,-,-,-,-^^String"
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#canonicalId>	Q2BL2SIC0JQV7CP0RQR3MCG5UU5U4996PBOU42V8CGOILMN7GTFG^^String
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#rawMimeType>	image/jpeg^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/segment/rect/63.0,221.0,70.0,176.0>	<http://schema.org/sameAs>	<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>
+"<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/segment/rect/63.0,221.0,70.0,176.0>"	<http://schema.org/sameAs>	<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>	<http://megras.org/schema#previewId>	3K8UQ6EEIS0D61J626V2MLO8117OJQMCFBC8F0ETKRAE2KMMA47G^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>	<http://megras.org/schema#bounds>	0.0,73.0,0.0,60.0,-,-,-,-^^String
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>	<http://megras.org/schema#bounds>	"0.0,73.0,0.0,60.0,-,-,-,-^^String"
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#rawId>	EL58FAQM086OK4VH0PD2QT4QB108G08H0NU7IKHU8IU1JHCUGSS0^^String
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>	<http://megras.org/schema#previewId>	F003FVU05LAME8IEN2JQH381THFUGIHT1MJP17E9SLTSAEJ4NRK0^^String
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>	<http://megras.org/schema#rawMimeType>	image/jpeg^^String
@@ -45,33 +45,43 @@ subject	predicate	object
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/OpL56Z16t_niQC2u0KnG6g>	<http://megras.org/schema#canonicalId>	PIR7BILGQUMBT5FAG7367L635I0SUKL8FDPK31J3BN6MF9A49BVG^^String
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/OpL56Z16t_niQC2u0KnG6g>	<http://megras.org/schema#segmentOf>	<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>	<http://megras.org/schema#segmentType>	rect^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>	<http://megras.org/schema#bounds>	0.0,225.0,0.0,225.0,-,-,-,-^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/OpL56Z16t_niQC2u0KnG6g>	<http://megras.org/schema#bounds>	0.0,62.0,0.0,76.0,-,-,-,-^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/segment/rect/22.0,171.0,8.0,84.0>	<http://schema.org/sameAs>	<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/segment/rect/174.0,270.0,17.0,78.0>	<http://schema.org/sameAs>	<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>	<http://megras.org/schema#bounds>	"0.0,225.0,0.0,225.0,-,-,-,-^^String"
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/OpL56Z16t_niQC2u0KnG6g>	<http://megras.org/schema#bounds>	"0.0,62.0,0.0,76.0,-,-,-,-^^String"
+"<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/segment/rect/22.0,171.0,8.0,84.0>"	<http://schema.org/sameAs>	<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>
+"<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/segment/rect/174.0,270.0,17.0,78.0>"	<http://schema.org/sameAs>	<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>	<http://megras.org/schema#previewId>	2R5U7N9G8NPG0R9DITP1B5H6CT31KJVHRUAM0970QUBKSRHMH11G^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/OpL56Z16t_niQC2u0KnG6g>	<http://megras.org/schema#segmentBounds>	10.0,72.0,11.0,87.0,-,-,-,-^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/OpL56Z16t_niQC2u0KnG6g>	<http://megras.org/schema#segmentBounds>	"10.0,72.0,11.0,87.0,-,-,-,-^^String"
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/lp0qW7sg2k3dtNS_eMyN7Q>	<http://megras.org/schema#segmentType>	rect^^String
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>	<http://megras.org/schema#mediaType>	IMAGE^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/lp0qW7sg2k3dtNS_eMyN7Q>	<http://megras.org/schema#segmentBounds>	18.0,63.0,13.0,69.0,-,-,-,-^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/lp0qW7sg2k3dtNS_eMyN7Q>	<http://megras.org/schema#segmentDefinition>	18.0,63.0,13.0,69.0^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/d9AAEZqRKPpRlPyAh0Ne-w>	<http://megras.org/schema#segmentBounds>	30.0,88.0,80.0,159.0,-,-,-,-^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>	<http://megras.org/schema#segmentDefinition>	22.0,171.0,8.0,84.0^^String
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/lp0qW7sg2k3dtNS_eMyN7Q>	<http://megras.org/schema#segmentBounds>	"18.0,63.0,13.0,69.0,-,-,-,-^^String"
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/lp0qW7sg2k3dtNS_eMyN7Q>	<http://megras.org/schema#segmentDefinition>	"18.0,63.0,13.0,69.0^^String"
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/d9AAEZqRKPpRlPyAh0Ne-w>	<http://megras.org/schema#segmentBounds>	"30.0,88.0,80.0,159.0,-,-,-,-^^String"
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>	<http://megras.org/schema#segmentDefinition>	"22.0,171.0,8.0,84.0^^String"
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#canonicalMimeType>	image/png^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>	<http://megras.org/schema#segmentDefinition>	88.0,230.0,82.0,162.0^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>	<http://megras.org/schema#segmentDefinition>	"88.0,230.0,82.0,162.0^^String"
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>	<http://megras.org/schema#previewId>	1GJKEPTG0AFH6UAE4QCE4954VK5LFVD6U3EUQK9SC8LE3RAB891G^^String
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>	<http://megras.org/schema#canonicalId>	OKQS74A414IBGETNVGQD4HED89304MEAK5KGHUETUNMBCI7BCBT0^^String
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>	<http://megras.org/schema#segmentType>	rect^^String
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>	<http://megras.org/schema#canonicalMimeType>	image/png^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/lp0qW7sg2k3dtNS_eMyN7Q>	<http://megras.org/schema#bounds>	0.0,45.0,0.0,56.0,-,-,-,-^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/segment/rect/30.0,88.0,80.0,159.0>	<http://schema.org/sameAs>	<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/d9AAEZqRKPpRlPyAh0Ne-w>
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/lp0qW7sg2k3dtNS_eMyN7Q>	<http://megras.org/schema#bounds>	"0.0,45.0,0.0,56.0,-,-,-,-^^String"
+"<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/segment/rect/30.0,88.0,80.0,159.0>"	<http://schema.org/sameAs>	<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/d9AAEZqRKPpRlPyAh0Ne-w>
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>	<http://megras.org/schema#fileName>	zebra.jpeg^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/d9AAEZqRKPpRlPyAh0Ne-w>	<http://megras.org/schema#segmentDefinition>	30.0,88.0,80.0,159.0^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/d9AAEZqRKPpRlPyAh0Ne-w>	<http://megras.org/schema#segmentDefinition>	"30.0,88.0,80.0,159.0^^String"
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>	<http://megras.org/schema#segmentOf>	<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA>
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>	<http://megras.org/schema#canonicalId>	PQ2VDE1H5SESUS8PRNIBESATOC3D9268E1TUTH4KHT5TA6GFNJ9G^^String
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>	<http://megras.org/schema#segmentOf>	<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ>
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>	<http://megras.org/schema#segmentBounds>	88.0,230.0,82.0,162.0,-,-,-,-^^String
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/ysZIyIF1MbNawSNc3XYCFg>	<http://megras.org/schema#segmentBounds>	"88.0,230.0,82.0,162.0,-,-,-,-^^String"
 <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA>	<http://megras.org/schema#previewId>	A33RCOCC4KEIM4D18JHT8GOGML02RNQKNSRQ286BP3M9B67ILH60^^String
-<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>	<http://megras.org/schema#segmentBounds>	63.0,221.0,70.0,176.0,-,-,-,-^^String
-<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/OpL56Z16t_niQC2u0KnG6g>	<http://megras.org/schema#segmentDefinition>	10.0,72.0,11.0,87.0^^String
+<http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/h4ciqa4XP61D5KD6aVwNtg>	<http://megras.org/schema#segmentBounds>	"63.0,221.0,70.0,176.0,-,-,-,-^^String"
+<http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/OpL56Z16t_niQC2u0KnG6g>	<http://megras.org/schema#segmentDefinition>	"10.0,72.0,11.0,87.0^^String"
 <http://localhost:8080/iBw8PDg9__y91SoerVgINihPxBlotdJpYQIgBEQX8eVI-RLwZxZ6HOA/c/2zu3Z2IKcq5MweoNyMFoIQ>	<http://megras.org/schema#segmentType>	rect^^String
+<http://localhost:8080/5UVKDUBRDL9C>	<http://megras.org/schema#color>	"[0.0213, 0.4284, 0.5521, 0.2841, 0.7978]^^DoubleVector"
+<http://localhost:8080/617JQRNNIEOI>	<http://megras.org/schema#color>	"[0.3298, 0.9386, 0.8411, 0.8109, 0.5140]^^DoubleVector"
+<http://localhost:8080/1FIDOE5I6VX5>	<http://megras.org/schema#color>	"[0.2158, 0.3893, 0.9886, 0.4000, 0.1420]^^DoubleVector"
+<http://localhost:8080/5Y6T7LPRUF6F>	<http://megras.org/schema#color>	"[0.2686, 0.7260, 0.9778, 0.8326, 0.4317]^^DoubleVector"
+<http://localhost:8080/2P8N44UM7W6W>	<http://megras.org/schema#color>	"[0.5727, 0.2149, 0.8180, 0.2774, 0.6795]^^DoubleVector"
+<http://localhost:8080/58NR6QMEKJA6>	<http://megras.org/schema#color>	"[0.1487, 0.2177, 0.4905, 0.3104, 0.1514]^^DoubleVector"
+<http://localhost:8080/7B9YTG4UGDOT>	<http://megras.org/schema#color>	"[0.6291, 0.5665, 0.4193, 0.5822, 0.6213]^^DoubleVector"
+<http://localhost:8080/7FYEPTAJ1SVH>	<http://megras.org/schema#color>	"[0.2890, 0.0965, 0.9507, 0.4454, 0.3699]^^DoubleVector"
+<http://localhost:8080/3MMR5Z87MUO2>	<http://megras.org/schema#color>	"[0.4156, 0.0532, 0.8158, 0.8842, 0.6180]^^DoubleVector"
+<http://localhost:8080/6IO0J3UDL6VQ>	<http://megras.org/schema#color>	"[0.5182, 0.6744, 0.7430, 0.3872, 0.9267]^^DoubleVector"
