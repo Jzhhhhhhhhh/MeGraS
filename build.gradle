@@ -42,7 +42,6 @@ dependencies {
     def jenaVersion = '4.8.0'
     def picnicVersion = '0.6.0'
 
-
     /* Javalin */
     implementation group: 'io.javalin', name: 'javalin', version: javalinVersion
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
@@ -146,10 +145,8 @@ dependencies {
 
 
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.10'
-    testImplementation 'io.javalin:javalin:4.6.0' // 确保使用了正确的 Javalin 版本
-    testImplementation 'io.javalin:javalin-testtools:4.6.0' // 添加 javalin-testtools
-
-
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
 }
 
 javafx {

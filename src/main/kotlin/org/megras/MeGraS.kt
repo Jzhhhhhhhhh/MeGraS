@@ -1,5 +1,7 @@
 package org.megras
 
+import org.megras.api.cli.Cli
+import org.megras.api.rest.RestApi
 import org.megras.data.fs.FileSystemObjectStore
 import org.megras.data.model.Config
 import org.megras.graphstore.TSVMutableQuadSet
@@ -26,8 +28,10 @@ object MeGraS {
 
         val quadSet = TSVMutableQuadSet("test.tsv")
 
+
 //        postgresStore.setup()
 //        cottontailStore.setup()
+
 //        RestApi.init(config, objectStore, quadSet)
 //
 //        Cli.init(quadSet, objectStore)
@@ -48,8 +52,6 @@ object MeGraS {
 
         val result = SparqlUtil.select(query, quadSet)
         println(result)
-
-
 
 
     }

@@ -36,8 +36,7 @@ enum class MeGraS(suffix: String) {
     RELATION("relation"),
     ERROR("error"),
     KNN("knn"),
-    COLOR("color")
-
+    COLOR("color"),
     ;
 
     companion object {

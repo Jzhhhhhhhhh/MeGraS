@@ -22,12 +22,23 @@ class JenaGraphWrapper(private var quads: QuadSet) : GraphBase() {
         val quadset: QuadSet
         //relations when give s and o
         //determine if s. o
+
+        //{s, above, o}
+        //      {null, above, null} figure out all element, get all o and all s, compare, group them by the origin media
+        // {null, above, o} return every segment above o
+        // {s, above, null} return every segment below o, equal to {null, below, o}
+        // {null, below, o}
+        // {null, null, null}
+        // think about vector operations
+        // 19th, Feb meeting
         when(p){
             QuadValue.of(MeGraS.ABOVE.uri) ->
                 if (o != null && s == null) quadset = aboveFunction(s, o, quads)
                 else if (o == null && s != null) quadset = aboveFunction(s, o, quads)
                 else quadset = quads
 //            QuadValue.of(MeGraS.ABOVE.uri)-> quadset = o?.let { aboveFunction(it, quads) } ?: quads
+
+
             QuadValue.of(MeGraS.BELOW.uri)-> quadset = o?.let { belowFunction(it, quads) } ?: quads
             QuadValue.of(MeGraS.CONTAINS.uri)->quadset = o?.let { containsFunction(it, quads) } ?: quads
             QuadValue.of(MeGraS.BELONGS_TO.uri)->quadset = o?.let { belongsToFunction(it, quads) } ?: quads
@@ -46,7 +57,6 @@ class JenaGraphWrapper(private var quads: QuadSet) : GraphBase() {
             QuadValue.of(MeGraS.RELATION.uri)->quadset = s?.takeIf { o != null }?.let { relationFunction(it, o!!, quads) } ?: quads
 //            QuadValue.of(MeGraS.KNN.uri)->quadset = o?.let { knnFunction(o, p, quads) } ?: quads
 //            QuadValue.of(MeGraS.COLOR.uri)->quadset = o?.let { knnFunction(o, p, quads) } ?: quads
-
             else-> quadset = this.quads.filter(
                 if (s != null) {
                     listOf(s)
