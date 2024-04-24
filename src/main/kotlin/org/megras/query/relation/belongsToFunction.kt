@@ -6,8 +6,8 @@ import org.megras.graphstore.QuadSet
 import org.megras.query.QueryUtil
 import org.megras.segmentation.Bounds
 
-fun belongsToFunction (o: QuadValue, quads: QuadSet): QuadSet {
-    val result: QueryUtil.BoundsResult = QueryUtil.getBounds(o, quads)
+fun belongsToFunction (o: QuadValue, quadset: QuadSet, quads: QuadSet): QuadSet {
+    val result: QueryUtil.BoundsResult = QueryUtil.getBounds(o, quadset, quads)
     val originBounds = result.originBounds
     val boundsSet = result.boundsSet
     val resultBounds : MutableList<QuadValue> = mutableListOf()
@@ -20,5 +20,4 @@ fun belongsToFunction (o: QuadValue, quads: QuadSet): QuadSet {
     }
     val resultSet = boundsSet.filter(null, listOf(MeGraS.SEGMENT_BOUNDS.uri), resultBounds)
     return resultSet
-
 }

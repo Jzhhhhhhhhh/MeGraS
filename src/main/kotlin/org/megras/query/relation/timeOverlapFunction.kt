@@ -6,17 +6,18 @@ import org.megras.graphstore.QuadSet
 import org.megras.query.QueryUtil
 import org.megras.segmentation.Bounds
 
-fun leftBelowFunction(o: QuadValue, quadset: QuadSet, quads: QuadSet): QuadSet {
+fun timeOverlapFunction(o: QuadValue, quadset: QuadSet, quads: QuadSet): QuadSet {
     val result: QueryUtil.BoundsResult = QueryUtil.getBounds(o, quadset, quads)
     val originBounds = result.originBounds
     val boundsSet = result.boundsSet
     val resultBounds : MutableList<QuadValue> = mutableListOf()
-    val originMinY = Bounds(originBounds.firstOrNull()?.`object`.toString()).getMinY()
-    val originMinX = Bounds(originBounds.firstOrNull()?.`object`.toString()).getMinX()
+    println((originBounds.firstOrNull()?.`object`))
+    val originMinT = Bounds(originBounds.firstOrNull()?.`object`.toString()).getMinT()
+    val originMaxT = Bounds(originBounds.firstOrNull()?.`object`.toString()).getMaxT()
     boundsSet.forEach{
-        val thisMaxY = Bounds(it.`object`.toString()).getMaxY()
-        val thisMaxX = Bounds(it.`object`.toString()).getMaxX()
-        if (thisMaxY < originMinY && thisMaxX < originMinX){
+        val thisMaxT = Bounds(it.`object`.toString()).getMaxT()
+        val thisMinT = Bounds(it.`object`.toString()).getMinT()
+        if ((thisMaxT >= originMaxT && thisMinT >= originMinT)||(thisMaxT <= originMaxT && thisMinT <= originMinT)){
             resultBounds.add(it.`object`)
         }
     }

@@ -5,10 +5,9 @@ import org.megras.data.schema.MeGraS
 import org.megras.graphstore.QuadSet
 import org.megras.query.QueryUtil
 import org.megras.segmentation.Bounds
-import kotlin.io.path.fileVisitor
 
-fun sizeEqualFunction(o: QuadValue, quads: QuadSet): QuadSet {
-    val result: QueryUtil.BoundsResult = QueryUtil.getBounds(o, quads)
+fun sizeEqualFunction(o: QuadValue, quadset: QuadSet, quads: QuadSet): QuadSet {
+    val result: QueryUtil.BoundsResult = QueryUtil.getBounds(o, quadset, quads)
     val originBounds = result.originBounds
     val boundsSet = result.boundsSet
     val resultBounds : MutableList<QuadValue> = mutableListOf()

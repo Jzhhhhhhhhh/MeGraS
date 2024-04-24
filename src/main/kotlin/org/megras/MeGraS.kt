@@ -29,9 +29,6 @@ object MeGraS {
         val quadSet = TSVMutableQuadSet("test.tsv")
 
 
-//        postgresStore.setup()
-//        cottontailStore.setup()
-
 //        RestApi.init(config, objectStore, quadSet)
 //
 //        Cli.init(quadSet, objectStore)
@@ -40,19 +37,19 @@ object MeGraS {
 //
 //        RestApi.stop()
 
-//        val query = "SELECT ?s " +
-//                    "WHERE { " +
-//                "?s <http://megras.org/schema#color> <http://localhost:8080/6IO0J3UDL6VQ> ." +
-//                "}"
-
-
         val query = "SELECT ?s " +
-                "WHERE {?s <http://megras.org/schema#segmentOf> <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/cAeuyOBOKXKbsJqnm7hckA> .}"
+                    "WHERE { " +
+                "?s <http://megras.org/schema#color> <http://localhost:8080/6IO0J3UDL6VQ> ." +
+                "} LIMIT 3"
+
+//
+//        val query = "SELECT ?s " +
+//                "WHERE {"+
+//                "?s <http://megras.org/schema#below> <http://localhost:8080/iARcbuvP-fw-_46DzlR294jid7Mx2oTyu2I9fNALjMvRqevcAdHZzUQ/c/_JKfyfP6eyEa-dr190BEtQ>.}"
 
 
         val result = SparqlUtil.select(query, quadSet)
         println(result)
-
 
     }
 

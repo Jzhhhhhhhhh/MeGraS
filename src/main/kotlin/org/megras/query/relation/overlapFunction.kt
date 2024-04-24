@@ -6,17 +6,14 @@ import org.megras.graphstore.QuadSet
 import org.megras.query.QueryUtil
 import org.megras.segmentation.Bounds
 
-fun leftBelowFunction(o: QuadValue, quadset: QuadSet, quads: QuadSet): QuadSet {
+fun overlapFunction(o: QuadValue, quadset: QuadSet, quads: QuadSet): QuadSet {
     val result: QueryUtil.BoundsResult = QueryUtil.getBounds(o, quadset, quads)
     val originBounds = result.originBounds
     val boundsSet = result.boundsSet
     val resultBounds : MutableList<QuadValue> = mutableListOf()
-    val originMinY = Bounds(originBounds.firstOrNull()?.`object`.toString()).getMinY()
-    val originMinX = Bounds(originBounds.firstOrNull()?.`object`.toString()).getMinX()
+    println((originBounds.firstOrNull()?.`object`))
     boundsSet.forEach{
-        val thisMaxY = Bounds(it.`object`.toString()).getMaxY()
-        val thisMaxX = Bounds(it.`object`.toString()).getMaxX()
-        if (thisMaxY < originMinY && thisMaxX < originMinX){
+        if (Bounds(it.`object`.toString()).overlaps(Bounds(originBounds.firstOrNull()?.`object`.toString()))){
             resultBounds.add(it.`object`)
         }
     }

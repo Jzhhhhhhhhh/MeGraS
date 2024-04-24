@@ -21,7 +21,6 @@ enum class MeGraS(suffix: String) {
     BELOW("below"),
     CONTAINS("contains"),
     BELONGS_TO("belongsTo"),
-    DURING("during"),
     LEFT_ABOVE("leftAbove"),
     RIGHT_ABOVE("rightAbove"),
     LEFT_BELOW("leftBelow"),
@@ -29,14 +28,17 @@ enum class MeGraS(suffix: String) {
     LEFT_BESIDE("leftBeside"),
     RIGHT_BESIDE("rightBeside"),
     OVERLAPS("overlaps"),
-    OVERLAPPED_BY("overlappedBy"),
     SIZE_EQUAL("sizeEqual"),
     SIZE_LARGER("sizeLarger"),
     SIZE_SMALLER("sizeSmaller"),
     RELATION("relation"),
-    ERROR("error"),
     KNN("knn"),
     COLOR("color"),
+    EARLY("early"),
+    LATE("late"),
+    TIME_CONTAIN("timeContain"),
+    TIME_BESIDE("timeBeside"),
+    TIME_OVERLAP("timeOverlap")
     ;
 
     companion object {
